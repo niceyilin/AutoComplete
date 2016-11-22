@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- title appears on browser tap -->
+<title>Yilin's AutoComplete SearchBox</title>
+<!-- include style CSS file -->
+<link rel="stylesheet" href="css/style.css" />
+<!-- jQuery libaray file-->
+<script type="text/javascript" src="javascript/jquery.min.js"></script>
+<!-- javascript used when keyword is entered in text box -->
+<script type="text/javascript" src="javascript/onKeyUpScript.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+	    		<!--NGram header picture just for fun-->
+            	<img src="images/title.PNG" width="800" height="auto"/>
+        </div>
+        <h1 class="main_title">Tiny Google Auto Complete Search Box :</h1>
+        <ul class="sub_title">
+        		<li> Used Hadoop MapReduce to build NGram language model</li>
+        		<li> Used MySQL database to store the lauguage model</li>
+        		<li> Used HTML, PHP, AJAX, jQuery to show auto complete web</li>
+        </ul>
+        <div class="content">
+            <form>
+                <div class="label_div">Type a keyword : </div>
+                <div class="input_container">
+                	<!--input text box of entered keyword, call autoComplete() when key is pressed-->
+                    <input type="text" id="entered_keyword" onkeyup="autocomplet()">
+                    <!--place holder for suggested keyword, will be filled by js and php-->
+                    <ul id="autocomplete_list"></ul>
+                </div>
+            </form>
+        </div>   
+        <div class="footer">
+        		<!--add link of github-->
+            	Powered by <a href="https://github.com/niceyilin">https://github.com/niceyilin</a>
+        </div>
+    </div>
+</body>
+</html>
