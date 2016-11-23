@@ -25,11 +25,12 @@
         		<li> Used HTML, PHP, AJAX, jQuery to show auto complete web</li>
         </ul>
         <div class="content">
-            <form>
+            <form action="insert_data.php" method="post">
                 <div class="label_div">Type a keyword : </div>
                 <div class="input_container">
                 	<!--input text box of entered keyword, call autoComplete() when key is pressed-->
-                    <input type="text" id="entered_keyword" onkeyup="autocomplet()">
+                    <input type="text" name="searchword" id="entered_keyword" onkeyup="autocomplet()">
+                    <input type="submit" value="Submit" style="height:20px; width:50px">
                     <!--place holder for suggested keyword, will be filled by js and php-->
                     <ul id="autocomplete_list"></ul>
                 </div>
